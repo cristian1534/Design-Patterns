@@ -7,8 +7,8 @@ class Order {
     this.orders.push(fn);
   }
 
-  deleteOrder(fn: ObserverOrder) {
-    this.orders = this.orders.filter((fnToDelete) => fn !== fnToDelete);
+  deleteOrder(fnToDelete: ObserverOrder) {
+    this.orders = this.orders.filter((fn) => fn !== fnToDelete);
   }
 
   fire() {
